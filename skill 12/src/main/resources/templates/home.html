@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">Title</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <h1 th:text="${title}">Welcome</h1>
+    <h2>Skills Learned:</h2>
+    <ul>
+        <li th:each="skill : ${skills}" th:text="${skill}">Skill</li>
+    </ul>
+    <p>This is a full stack development example using Spring Boot and Thymeleaf.</p>
+</body>
+</html>
